@@ -9,6 +9,7 @@ enum Color {
   Black
   Brown
   Yellow
+  Teal
 }
 
 type Cat implements Node {
@@ -27,6 +28,5 @@ union Pet = Cat | Dog
 
 type Query {
     hello: String!
-
     pets: [Pet!]!
 }
