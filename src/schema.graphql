@@ -24,9 +24,17 @@ type Dog implements Node {
   color: Color!
 }
 
+input PetInput {
+  name: String!
+}
+
 union Pet = Cat | Dog
 
 type Query {
     hello: String!
     pets: [Pet!]!
+}
+
+type Mutation {
+    addPet(input: PetInput!): [Pet!]!
 }

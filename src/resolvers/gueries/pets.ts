@@ -1,4 +1,4 @@
 import { PetMocks } from '../../mocks/Pet';
-import { type Query } from '../../types/graphql';
+import { type QueryResolvers } from '../../types/graphql';
 
-export const pets = (): Query['pets'] => PetMocks.makeRandomPetWithCount(5);
+export const pets: QueryResolvers['pets'] = () => PetMocks.makeRandomPetWithCount(5);

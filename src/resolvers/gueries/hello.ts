@@ -1,3 +1,3 @@
-import type { Query } from '../../types/graphql';
+import type { Query, QueryResolvers } from '../../types/graphql';
 
-export const hello = (): Query['hello'] => 'world!';
+export const hello: QueryResolvers['hello'] = () => 'world!';
