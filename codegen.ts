@@ -7,8 +7,13 @@ const config: CodegenConfig = {
     generates: {
         'src/types/graphql.ts': {
             plugins: [
-                'typescript'
+                'typescript',
+                'typescript-resolvers',
+                'typescript-operations',
             ],
+            config: {
+                immutableTypes: true,
+            }
         },
     }
 }

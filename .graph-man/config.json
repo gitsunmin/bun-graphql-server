@@ -2,6 +2,9 @@
     "environment": {
         "development": {
             "url": "http://localhost:3000/graphql"
+        },
+        "stage": {
+            "url": "http://localhost:3000/graphql"
         }
     }
 }
