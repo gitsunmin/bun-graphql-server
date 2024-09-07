@@ -1,15 +1,19 @@
 {
   "environment": {
-    "dev": {
-      "url": "http://localhost:3000/graphql",
-      "headers": {
-        "Cookies": "cookie1=value1; cookie2=value2",
-        "Authorization": "Bearer token"
+    "development": {
+        "url": "http://localhost:3000/graphql",
+        "headers": {
+          "Cookies": "session=blahblahblah;",
+          "Authorization": "Bearer blahblahblah"
+        }
+      },
+      "stage": {
+        "url": "http://localhost:3000/graphql",
+        "headers": {
+          "Cookies": "session=blahblahblah;",
+          "Authorization": "Bearer blahblahblah"
+        }
       }
-    },
-    "prod": {
-      "url": "http://localhost:3200/graphql",
-      "headers": {}
     }
   }
 }
