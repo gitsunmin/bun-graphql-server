@@ -1,18 +1,19 @@
 {
-    "environment": {
-        "development": {
-            "url": "http://localhost:3000/graphql",
-            "headers": {
-                "Cookies": "session=blahblahblah;",
-                "Authorization": "Bearer blahblahblah"
-            }
-        },
-        "stage": {
-            "url": "http://localhost:3000/graphql",
-            "headers": {
-                "Cookies": "session=blahblahblah;",
-                "Authorization": "Bearer blahblahblah"
-            }
+  "environment": {
+    "development": {
+        "url": "http://localhost:3000/graphql",
+        "headers": {
+          "Cookies": "session=blahblahblah;",
+          "Authorization": "Bearer blahblahblah"
         }
+      },
+      "stage": {
+        "url": "http://localhost:3000/graphql",
+        "headers": {
+          "Cookies": "session=blahblahblah;",
+          "Authorization": "Bearer blahblahblah"
+        }
+      }
     }
+  }
 }

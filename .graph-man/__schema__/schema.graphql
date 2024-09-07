@@ -1,0 +1,38 @@
+interface Node {
+  id: ID!
+}
+
+enum Color {
+  White
+  Black
+  Brown
+  Yellow
+  Teal
+}
+
+type Cat implements Node {
+  id: ID!
+  name: String!
+  color: Color!
+}
+
+type Dog implements Node {
+  id: ID!
+  name: String!
+  color: Color!
+}
+
+input PetInput {
+  name: String!
+}
+
+union Pet = Cat | Dog
+
+type Query {
+  hello: String!
+  pets: [Pet!]!
+}
+
+type Mutation {
+  addPet(input: PetInput!): [Pet!]!
+}
